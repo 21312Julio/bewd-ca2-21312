@@ -9,8 +9,10 @@ class CitizenAdd extends React.Component{
     constructor(props){
         super(props)
         this.state = {
-            // you should save the variables in this state
-            // all variables that should be in your class should be here
+            age: '',
+            name: '',
+            profession: '',
+            vaccinated: ''
         }
         this.handleInputChange = this.handleInputChange.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);

@@ -62,7 +62,6 @@ class CitizenView extends React.Component {
                     <h2>Vaccinated: {this.state.vaccinated===true? 'Yes' : 'No'}</h2>
                     <h2>Profession: {this.state.profession}</h2>
                     <button onClick={this.handleDelete}>Delete</button>
-                    {/* you could also add the buttons to add edit and delete this specific citizen */}
                 </div>
             )
         }
