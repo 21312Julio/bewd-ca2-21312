@@ -1,23 +1,24 @@
-import logo from './logo.svg';
 import './App.css';
+import Citizens from './components/Citizens';
+import CitizenEdit from './components/CitizenEdit';
+import CitizenView from './components/CitizenView';
+import CitizenAdd from './components/CitizenAdd';
+import Citizen from './components/Citizen';
+import {
+  Routes,
+  Route
+} from 'react-router-dom';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      {/* all your routs should be implemented here */}
+      <Routes>
+        <Route  path='/' element={<Citizens />} />
+        <Route path='/editCitizen' element={<CitizenEdit />} />
+        <Route path='/viewCitizen' element={<CitizenView />} />
+        <Route path='/addCitizen' element={<CitizenAdd />} />
+      </Routes>
     </div>
   );
 }
